@@ -1,0 +1,11 @@
+[database]
+
+[database.host]
+name = "localhost"
+port = "default"
+
+[[database.databases]]
+name = "postgres"
+
+[[database.databases]]
+name = wilkinson-workshop
