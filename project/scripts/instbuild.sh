@@ -12,7 +12,7 @@ fi
 container_name=`printf 'postgres0x%0 2x' ${1}`
 
 CONTAINER_IMAGE=postgres:latest
-CONTAINER_MOUNT_O1=type=bind,source=/mnt/postgres0x00,target=/var/lib/postgresql/data
+CONTAINER_MOUNT_O1=type=bind,source=/mnt/$container_name,target=/var/lib/postgresql/data
 CONTAINER_MOUNT_O2=type=bind,source=/etc/passwd,target=/etc/passwd
 
 docker create --name $container_name \
